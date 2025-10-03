@@ -6,6 +6,9 @@ Overview
 
 Predict hospital patient mortality using diagnoses, disease clusters, and hybrid features with machine learning. This project compares Gradient Boosting, Random Forest, Logistic Regression, and SVM models.
 
+Data Set:
+Simulated EHR data sets used - unknown on real data sets
+
 Features & Models
 
 Feature sets: Diagnoses, patient clusters, hybrid combinations
