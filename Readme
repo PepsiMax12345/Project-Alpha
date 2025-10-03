@@ -1,1 +1,59 @@
 ReadME
+
+Disease Pattern Clustering for Mortality Risk Prediction
+
+Overview
+
+Predict hospital patient mortality using diagnoses, disease clusters, and hybrid features with machine learning. This project compares Gradient Boosting, Random Forest, Logistic Regression, and SVM models.
+
+Features & Models
+
+Feature sets: Diagnoses, patient clusters, hybrid combinations
+
+Models:
+
+Gradient Boosting (best: learning_rate=0.1, max_depth=3, n_estimators=100)
+
+Random Forest (conservative grid)
+
+Logistic Regression (balanced classes, C ∈ {0.1,1,10})
+
+SVM (probability enabled for ROC-AUC)
+
+Evaluation: ROC-AUC, validation/test splits (70/20/10)
+
+Quick Start
+Requirements
+pip install -r requirements.txt
+
+Run Pipeline
+python run_pipeline.py
+
+
+Outputs: model metrics, ROC curves, and feature importance plots.
+
+Results
+
+Best Model: Gradient Boosting
+
+Validation AUC: 0.914
+
+Test AUC: 0.920
+
+Project Structure
+/data       # Input datasets
+/notebooks  # Analysis and exploration
+/scripts    # Pipeline scripts
+/figures    # Plots and visualizations
+README.md
+requirements.txt
+
+Notes
+
+Hyperparameters chosen conservatively to balance performance, interpretability, and computational cost.
+
+Pipeline handles model failures gracefully.
+
+License
+
+MIT License
